@@ -10,7 +10,7 @@
     text-align: center;
     margin: 30px;
   }
-  div>.row
+  .row>div
     {
         margin-bottom:10px;
     }
