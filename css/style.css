@@ -11,6 +11,9 @@
     margin: 30px;
   }
   div>.row
+    {
+        margin-bottom:10px;
+    }
   p {
     background-color: grey;
     height: 100%;
