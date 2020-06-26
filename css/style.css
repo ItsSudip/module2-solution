@@ -10,11 +10,14 @@
     text-align: center;
     margin: 30px;
   }
-  
+  div>.row
   p {
     background-color: grey;
     height: 100%;
     padding: 10px;
+  }
+    .row > div{
+      margin-bottom: 10px;
   }
 
   .p1{
