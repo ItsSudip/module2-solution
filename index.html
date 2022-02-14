@@ -6,35 +6,33 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
     <!-- Global site tag (gtag.js) - Google Ads: 10825076796 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-10825076796"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10825076796"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      gtag("config", "AW-10825076796");
+      gtag('config', 'AW-10825076796');
     </script>
-    <!-- Event snippet for Page view conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <!-- Event snippet for Purchase1st conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-10825076796/ha3WCPDS5JQDELyg5qko",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10825076796/tuWDCIm67qADELyg5qko',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
+</script>
   </head>
   <body>
     <h1>Our Menu</h1>
