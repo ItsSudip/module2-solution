@@ -6,36 +6,41 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
     <!-- Global site tag (gtag.js) - Google Ads: 10849801498 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10849801498"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10849801498"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'AW-10849801498');
+      gtag("config", "AW-10849801498");
     </script>
 
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    In your html page, add the snippet and call gtag_report_conversion when
+    someone clicks on the chosen link or button. -->
     <!-- Event snippet for Page view conversion page
     In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-10849801498/tuWDCIm67qADELyg5qko',
-          'value': 15.0,
-          'transaction_id': 'order1234',
-          'currency': 'INR',
-          'event_callback': callback
-      });
-      return false;
-    }
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-10849801498/tuWDCIm67qADELyg5qko",
+          value: 15.0,
+          transaction_id: "order1234",
+          currency: "INR",
+          event_callback: callback,
+        });
+        return false;
+      }
     </script>
-
   </head>
   <body>
     <h1>Our Menu</h1>
@@ -67,7 +72,11 @@
           voluptatum eaque, tempore eum.
         </p>
       </div>
-      <div><button onclick="gtag_report_conversion("facebook.com")">Page Call</button></div>
+      <div>
+        <button onclick="gtag_report_conversion('facebook.com')">
+          Page Call
+        </button>
+      </div>
       <div><button onclick="gtag_report_conversion()">Page Call2</button></div>
     </div>
   </body>
