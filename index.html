@@ -30,6 +30,8 @@
         "script",
         "https://connect.facebook.net/en_US/fbevents.js"
       );
+      fbq('init', '390069189002798');
+      fbq('track', 'PageView');
       function load(){
         fbq("init", "390069189002798",{ external_id: "user1235" });        
       }
