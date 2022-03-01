@@ -30,9 +30,17 @@
         "script",
         "https://connect.facebook.net/en_US/fbevents.js"
       );
-      fbq("init", "390069189002798",{ external_id: "user1235" });
-      fbq("track", "Pageaiew");
-      fbq("init", "390069189002798");
+      function load(){
+        fbq("init", "390069189002798",{ external_id: "user1235" });        
+      }
+      function identify(){
+        fbq("init", "390069189002798");
+      }
+      function track(){
+        fbq("track", "random event");
+      }
+      
+
     </script>
     <noscript
       ><img
@@ -73,12 +81,9 @@
           voluptatum eaque, tempore eum.
         </p>
       </div>
-      <div>
-        <button onclick="gtag_report_conversion('facebook.com')">
-          Page Call
-        </button>
-      </div>
-      <div><button onclick="gtag_report_conversion()">Page Call2</button></div>
+      <div><button onclick="load()">Load</button></div>
+      <div><button onclick="identify()">identify</button></div>
+      <div><button onclick="track()">track</button></div>
     </div>
   </body>
 </html>
