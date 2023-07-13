@@ -47,7 +47,14 @@
           e.load(
             "1obf4qONg9ppXRYbLGxoEm4do5S",
             "https://rudderstacndaacoknlyyjqa.dataplane.rudderstack.com",
-            { logLevel: "DEBUG" }
+            { logLevel: "DEBUG" },
+            {
+              integrations: {
+                VWO: {
+                  loadIntegration: true,
+                },
+              },
+            }
           ),
           e.page();
       })();
