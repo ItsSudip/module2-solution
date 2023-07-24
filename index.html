@@ -39,7 +39,9 @@
           var r = document.createElement("script");
           (r.type = "text/javascript"),
             (r.async = !0),
-            (r.src = "https://cdn.rudderlabs.com/v1.1/rudder-analytics-staging.min.js");
+            (r.src =
+              "https://cdn.rudderlabs.com/staging/latest/rudder-analytics-staging.min.js");
+
           var a = document.getElementsByTagName("script")[0];
           a.parentNode.insertBefore(r, a);
         }),
@@ -94,97 +96,3 @@
   </body>
 </html>
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-    <script type="text/javascript">
-      !(function () {
-        var e = (window.rudderanalytics = window.rudderanalytics || []);
-        (e.methods = [
-          "load",
-          "page",
-          "track",
-          "identify",
-          "alias",
-          "group",
-          "ready",
-          "reset",
-          "getAnonymousId",
-          "setAnonymousId",
-          "getUserId",
-          "getUserTraits",
-          "getGroupId",
-          "getGroupTraits",
-          "startSession",
-          "endSession",
-        ]),
-          (e.factory = function (t) {
-            return function () {
-              e.push([t].concat(Array.prototype.slice.call(arguments)));
-            };
-          });
-        for (var t = 0; t < e.methods.length; t++) {
-          var r = e.methods[t];
-          e[r] = e.factory(r);
-        }
-        (e.loadJS = function (e, t) {
-          var r = document.createElement("script");
-          (r.type = "text/javascript"),
-            (r.async = !0),
-            (r.src = "https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js");
-          var a = document.getElementsByTagName("script")[0];
-          a.parentNode.insertBefore(r, a);
-        }),
-          e.loadJS(),
-          e.load(
-            "1obf4qONg9ppXRYbLGxoEm4do5S",
-            "https://rudderstacndaacoknlyyjqa.dataplane.rudderstack.com",
-            { logLevel: "DEBUG" },
-            {
-              integrations: {
-                VWO: {
-                  loadIntegration: true,
-                },
-              },
-            }
-          ),
-          e.page();
-      })();
-    </script>
-  </head>
-  <body>
-    <h1>Our Menu</h1>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 p11">
-        <p class="p1">Chicken</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-          libero tenetur autem dolorem similique impedit ea, atque rem
-          provident. Ipsa impedit enim sapiente similique iste incidunt
-          voluptatum eaque, tempore eum.
-        </p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 p21">
-        <p class="p2">Beef</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-          libero tenetur autem dolorem similique impedit ea, atque rem
-          provident. Ipsa impedit enim sapiente similique iste incidunt
-          voluptatum eaque, tempore eum.
-        </p>
-      </div>
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <p class="p3">Sushi</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-          libero tenetur autem dolorem similique impedit ea, atque rem
-          provident. Ipsa impedit enim sapiente similique iste incidunt
-          voluptatum eaque, tempore eum.
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
